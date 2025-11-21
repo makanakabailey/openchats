@@ -53,9 +53,9 @@ export default function ProductPage({ params }: ProductPageProps) {
         {/* Breadcrumb */}
         <nav className="text-sm text-text-muted mb-6">
           <a href="/shop" className="hover:text-spicy-orange">Shop</a>
-          <span className="mx-2">></span>
+          <span className="mx-2">&gt;</span>
           <span>{product.category}</span>
-          <span className="mx-2">></span>
+          <span className="mx-2">&gt;</span>
           <span>{product.name}</span>
         </nav>
 
