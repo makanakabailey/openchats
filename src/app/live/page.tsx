@@ -1,6 +1,6 @@
 'use client';
 
-import { Play, Users, ChatCircle } from '@phosphor-icons/react';
+import { Play, Users, ChatCircle, YoutubeLogo, TiktokLogo, InstagramLogo } from '@phosphor-icons/react';
 
 export default function LivePage() {
   return (
@@ -85,9 +85,9 @@ export default function LivePage() {
               href="https://www.youtube.com/@openchats"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-red-500/10 rounded-lg p-8 border-2 border-red-500 hover:scale-105 transition-transform text-center"
+              className="bg-red-500/10 rounded-lg p-8 border-2 border-red-500 hover:scale-105 transition-transform text-center group"
             >
-              <div className="text-6xl mb-4">📺</div>
+              <YoutubeLogo size={64} weight="fill" className="text-red-500 mx-auto mb-4 group-hover:scale-110 transition-transform" />
               <h3 className="font-display text-2xl font-bold uppercase text-white mb-2">
                 YouTube
               </h3>
@@ -99,9 +99,9 @@ export default function LivePage() {
               href="https://www.tiktok.com/@openchats"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-cyan-500/10 rounded-lg p-8 border-2 border-cyan-500 hover:scale-105 transition-transform text-center"
+              className="bg-cyan-500/10 rounded-lg p-8 border-2 border-cyan-500 hover:scale-105 transition-transform text-center group"
             >
-              <div className="text-6xl mb-4">🎵</div>
+              <TiktokLogo size={64} weight="fill" className="text-cyan-500 mx-auto mb-4 group-hover:scale-110 transition-transform" />
               <h3 className="font-display text-2xl font-bold uppercase text-white mb-2">
                 TikTok
               </h3>
@@ -113,9 +113,9 @@ export default function LivePage() {
               href="https://www.instagram.com/openchats"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-pink-500/10 rounded-lg p-8 border-2 border-pink-500 hover:scale-105 transition-transform text-center"
+              className="bg-pink-500/10 rounded-lg p-8 border-2 border-pink-500 hover:scale-105 transition-transform text-center group"
             >
-              <div className="text-6xl mb-4">📱</div>
+              <InstagramLogo size={64} weight="fill" className="text-pink-500 mx-auto mb-4 group-hover:scale-110 transition-transform" />
               <h3 className="font-display text-2xl font-bold uppercase text-white mb-2">
                 Instagram
               </h3>
