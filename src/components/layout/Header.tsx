@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-40 glass border-b border-zinc-800">
+      <header className="fixed top-0 left-0 right-0 z-50 glass border-b border-zinc-800">
         <nav className="container mx-auto flex items-center justify-between h-16 px-4">
           {/* Logo - Circular Frame */}
           <Link href="/" className="flex items-center gap-3 group">
@@ -30,40 +30,46 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6 lg:gap-8">
             <Link 
               href="/episodes" 
-              className="font-body text-sm font-semibold uppercase tracking-wide text-white hover:text-spicy-orange transition-colors"
+              className="font-body text-sm font-semibold uppercase tracking-wide text-white hover:text-spicy-orange transition-colors whitespace-nowrap"
             >
               EPISODES
             </Link>
             <Link 
+              href="/live" 
+              className="font-body text-sm font-semibold uppercase tracking-wide text-red-500 hover:text-red-400 transition-colors whitespace-nowrap animate-pulse"
+            >
+              LIVE
+            </Link>
+            <Link 
               href="/shop" 
-              className="font-body text-sm font-semibold uppercase tracking-wide text-white hover:text-spicy-orange transition-colors"
+              className="font-body text-sm font-semibold uppercase tracking-wide text-white hover:text-spicy-orange transition-colors whitespace-nowrap"
             >
               MERCH
             </Link>
             <Link 
               href="/community" 
-              className="font-body text-sm font-semibold uppercase tracking-wide text-white hover:text-spicy-orange transition-colors"
+              className="font-body text-sm font-semibold uppercase tracking-wide text-white hover:text-spicy-orange transition-colors whitespace-nowrap"
             >
               COMMUNITY
             </Link>
             <Link 
               href="/membership" 
-              className="font-body text-sm font-semibold uppercase tracking-wide text-spicy-orange hover:text-white transition-colors"
+              className="font-body text-sm font-semibold uppercase tracking-wide text-spicy-orange hover:text-white transition-colors whitespace-nowrap"
             >
               JOIN
             </Link>
             <Link 
               href="/about" 
-              className="font-body text-sm font-semibold uppercase tracking-wide text-white hover:text-spicy-orange transition-colors"
+              className="font-body text-sm font-semibold uppercase tracking-wide text-white hover:text-spicy-orange transition-colors whitespace-nowrap"
             >
               HOSTS
             </Link>
             <Link 
               href="/contact" 
-              className="font-body text-sm font-semibold uppercase tracking-wide text-white hover:text-spicy-orange transition-colors"
+              className="font-body text-sm font-semibold uppercase tracking-wide text-white hover:text-spicy-orange transition-colors whitespace-nowrap"
             >
               CONTACT
             </Link>

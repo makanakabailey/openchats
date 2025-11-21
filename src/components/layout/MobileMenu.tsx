@@ -56,46 +56,53 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
       </button>
       
       {/* Centered Navigation Links - MASSIVE */}
-      <nav className="flex flex-col items-center justify-center h-full gap-8">
+      <nav className="flex flex-col items-center justify-center h-full gap-6 md:gap-8">
         <Link 
           href="/episodes" 
           onClick={handleLinkClick}
-          className="font-display text-4xl md:text-5xl font-black uppercase text-white hover:text-spicy-orange transition-colors"
+          className="font-display text-3xl md:text-5xl font-black uppercase text-white hover:text-spicy-orange transition-colors"
         >
           EPISODES
         </Link>
         <Link 
+          href="/live" 
+          onClick={handleLinkClick}
+          className="font-display text-3xl md:text-5xl font-black uppercase text-red-500 hover:text-red-400 transition-colors animate-pulse"
+        >
+          LIVE
+        </Link>
+        <Link 
           href="/shop" 
           onClick={handleLinkClick}
-          className="font-display text-4xl md:text-5xl font-black uppercase text-white hover:text-spicy-orange transition-colors"
+          className="font-display text-3xl md:text-5xl font-black uppercase text-white hover:text-spicy-orange transition-colors"
         >
           MERCH
         </Link>
         <Link 
           href="/community" 
           onClick={handleLinkClick}
-          className="font-display text-4xl md:text-5xl font-black uppercase text-white hover:text-spicy-orange transition-colors"
+          className="font-display text-3xl md:text-5xl font-black uppercase text-white hover:text-spicy-orange transition-colors"
         >
           COMMUNITY
         </Link>
         <Link 
           href="/membership" 
           onClick={handleLinkClick}
-          className="font-display text-4xl md:text-5xl font-black uppercase text-spicy-orange hover:text-white transition-colors"
+          className="font-display text-3xl md:text-5xl font-black uppercase text-spicy-orange hover:text-white transition-colors"
         >
           JOIN
         </Link>
         <Link 
           href="/about" 
           onClick={handleLinkClick}
-          className="font-display text-4xl md:text-5xl font-black uppercase text-white hover:text-spicy-orange transition-colors"
+          className="font-display text-3xl md:text-5xl font-black uppercase text-white hover:text-spicy-orange transition-colors"
         >
           HOSTS
         </Link>
         <Link 
           href="/contact" 
           onClick={handleLinkClick}
-          className="font-display text-4xl md:text-5xl font-black uppercase text-white hover:text-spicy-orange transition-colors"
+          className="font-display text-3xl md:text-5xl font-black uppercase text-white hover:text-spicy-orange transition-colors"
         >
           CONTACT
         </Link>

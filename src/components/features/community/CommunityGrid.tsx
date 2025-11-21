@@ -224,13 +224,17 @@ export default function CommunityGrid({ onSubmissionClick }: CommunityGridProps)
           <div className="flex-1 min-w-0">
             {/* Filter Tabs */}
             <div className="mb-4 md:mb-6">
-              <div className="flex items-center justify-between mb-3 md:mb-4">
-                <p className="text-text-muted text-xs md:text-sm break-words">
-                  Showing <span className="text-white font-semibold">{discussions.length}</span> discussions
+              <div className="mb-3 md:mb-4">
+                <p className="text-text-muted text-xs md:text-sm">
+                  <span className="block sm:inline">
+                    Showing <span className="text-white font-semibold">{discussions.length}</span> discussions
+                  </span>
                   {selectedCategory !== 'all' && (
-                    <span className="block sm:inline"> in <span className="text-spicy-orange">
-                      {categories.find(c => c.id === selectedCategory)?.name}
-                    </span></span>
+                    <span className="block sm:inline sm:ml-1">
+                      in <span className="text-spicy-orange break-words">
+                        {categories.find(c => c.id === selectedCategory)?.name}
+                      </span>
+                    </span>
                   )}
                 </p>
               </div>

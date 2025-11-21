@@ -35,9 +35,12 @@ export default function LiveEventBanner() {
             </div>
           </div>
           
-          <button className="bg-white text-spicy-orange px-4 sm:px-6 md:px-8 py-2 md:py-3 rounded-lg font-bold uppercase text-xs sm:text-sm hover:bg-gray-100 transition-colors whitespace-nowrap w-full md:w-auto">
+          <a 
+            href="/live"
+            className="bg-white text-spicy-orange px-4 sm:px-6 md:px-8 py-2 md:py-3 rounded-lg font-bold uppercase text-xs sm:text-sm hover:bg-gray-100 transition-colors whitespace-nowrap w-full md:w-auto text-center"
+          >
             JOIN LIVE NOW →
-          </button>
+          </a>
         </div>
       </div>
     </section>
