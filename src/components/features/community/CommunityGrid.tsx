@@ -185,9 +185,9 @@ export default function CommunityGrid({ onSubmissionClick }: CommunityGridProps)
   }, [allDiscussions, selectedCategory, activeFilter]);
 
   return (
-    <section className="py-12 px-4">
-      <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row gap-8">
+    <section className="py-8 md:py-12 px-4 overflow-hidden">
+      <div className="container mx-auto max-w-7xl">
+        <div className="flex flex-col lg:flex-row gap-6 md:gap-8">
           {/* Sidebar - Desktop */}
           <div className="hidden lg:block w-64 flex-shrink-0">
             <CommunitySidebar 
@@ -198,19 +198,19 @@ export default function CommunityGrid({ onSubmissionClick }: CommunityGridProps)
           </div>
           
           {/* Mobile Sidebar Toggle */}
-          <div className="lg:hidden mb-6">
+          <div className="lg:hidden mb-4 md:mb-6">
             <button
               onClick={() => setShowSidebar(!showSidebar)}
-              className="flex items-center gap-2 px-4 py-2 bg-card-dark border border-zinc-700 rounded-lg text-white"
+              className="flex items-center justify-between w-full px-4 py-3 bg-card-dark border border-zinc-700 rounded-lg text-white"
             >
-              <span>Categories</span>
+              <span className="font-semibold">Categories</span>
               <div className={`transform transition-transform ${showSidebar ? 'rotate-180' : ''}`}>
                 ▼
               </div>
             </button>
             
             {showSidebar && (
-              <div className="mt-4 p-4 bg-card-dark rounded-lg border border-zinc-700">
+              <div className="mt-4 p-4 bg-card-dark rounded-lg border border-zinc-700 overflow-x-hidden">
                 <CommunitySidebar 
                   selectedCategory={selectedCategory}
                   onCategoryChange={setSelectedCategory}
@@ -221,40 +221,40 @@ export default function CommunityGrid({ onSubmissionClick }: CommunityGridProps)
           </div>
           
           {/* Discussions Grid */}
-          <div className="flex-1">
+          <div className="flex-1 min-w-0">
             {/* Filter Tabs */}
-            <div className="mb-6">
-              <div className="flex items-center justify-between mb-4">
-                <p className="text-text-muted">
+            <div className="mb-4 md:mb-6">
+              <div className="flex items-center justify-between mb-3 md:mb-4">
+                <p className="text-text-muted text-xs md:text-sm break-words">
                   Showing <span className="text-white font-semibold">{discussions.length}</span> discussions
                   {selectedCategory !== 'all' && (
-                    <span> in <span className="text-spicy-orange">
+                    <span className="block sm:inline"> in <span className="text-spicy-orange">
                       {categories.find(c => c.id === selectedCategory)?.name}
                     </span></span>
                   )}
                 </p>
               </div>
               
-              <div className="flex items-center gap-4 border-b border-zinc-700">
+              <div className="flex items-center gap-2 md:gap-4 border-b border-zinc-700 overflow-x-auto scrollbar-hide">
                 {filterOptions.map(option => (
                   <button
                     key={option.id}
                     onClick={() => setActiveFilter(option.id)}
-                    className={`flex items-center gap-2 px-4 py-3 border-b-2 font-semibold transition-colors ${
+                    className={`flex items-center gap-1 md:gap-2 px-3 md:px-4 py-2 md:py-3 border-b-2 font-semibold transition-colors whitespace-nowrap text-sm md:text-base ${
                       activeFilter === option.id
                         ? 'border-spicy-orange text-spicy-orange'
                         : 'border-transparent text-text-muted hover:text-white'
                     }`}
                   >
                     <span>{option.icon}</span>
-                    <span>{option.label}</span>
+                    <span className="hidden sm:inline">{option.label}</span>
                   </button>
                 ))}
               </div>
             </div>
 
             {/* Discussions List */}
-            <div className="space-y-4">
+            <div className="space-y-3 md:space-y-4">
               {discussions.length > 0 ? (
                 discussions.map((discussion) => (
                   <DiscussionCard key={discussion.id} discussion={discussion} />

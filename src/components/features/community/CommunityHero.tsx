@@ -9,13 +9,13 @@ export default function CommunityHero() {
   const [showNewDiscussionModal, setShowNewDiscussionModal] = useState(false);
 
   return (
-    <section className="bg-hero-gradient pt-16 pb-12">
+    <section className="bg-hero-gradient pt-16 pb-12 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="font-display text-4xl md:text-6xl font-black uppercase tracking-tight text-white mb-6">
+          <h1 className="font-display text-3xl sm:text-4xl md:text-6xl font-black uppercase tracking-tight text-white mb-4 md:mb-6 break-words">
             COMMUNITY HUB
           </h1>
-          <p className="font-body text-lg md:text-xl text-text-body mb-12 max-w-2xl mx-auto">
+          <p className="font-body text-base md:text-lg lg:text-xl text-text-body mb-8 md:mb-12 max-w-2xl mx-auto px-2">
             Join the conversation. Share your takes. Connect with fellow listeners.
           </p>
           
