@@ -10,32 +10,43 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Base (60%) - Almost Black Studio Background
-        'studio-black': '#000000',
-        'studio-dark': '#09090b',
+        // Base (60%) - Navy Background
+        'studio-black': '#20344b',
+        'studio-dark': '#1a2938',
         
         // Secondary (30%) - Cards & Text
-        'card-dark': '#18181b',
-        'card-darker': '#27272a',
+        'card-dark': '#2a3f54',
+        'card-darker': '#1f3142',
         'text-body': '#d4d4d8',
         'text-muted': '#a1a1aa',
         
-        // Accent (10%) - "The Spicy Color"
+        // Accent (10%) - Golden & Red
+        'brand-golden': {
+          DEFAULT: '#dfbf6d',
+          light: '#e8d08f',
+          dark: '#c9a84d',
+        },
+        'brand-red': {
+          DEFAULT: '#d9472c',
+          light: '#e36550',
+          dark: '#b83820',
+        },
+        // Legacy support - map to new colors
         'spicy-orange': {
-          DEFAULT: '#FF4500',
-          light: '#FF6347',
-          dark: '#CC3700',
+          DEFAULT: '#dfbf6d',
+          light: '#e8d08f',
+          dark: '#c9a84d',
         },
         'electric-purple': {
-          DEFAULT: '#8B5CF6',
-          light: '#A78BFA',
-          dark: '#7C3AED',
+          DEFAULT: '#d9472c',
+          light: '#e36550',
+          dark: '#b83820',
         },
       },
       
       backgroundImage: {
-        'hero-gradient': 'radial-gradient(circle at top, rgba(139, 92, 246, 0.3) 0%, rgba(0, 0, 0, 1) 100%)',
-        'card-gradient': 'linear-gradient(135deg, #18181b 0%, #09090b 100%)',
+        'hero-gradient': 'radial-gradient(circle at top, rgba(223, 191, 109, 0.2) 0%, rgba(32, 52, 75, 1) 100%)',
+        'card-gradient': 'linear-gradient(135deg, #2a3f54 0%, #1a2938 100%)',
       },
       
       fontFamily: {

@@ -36,7 +36,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
     <div className="fixed inset-0 z-50 bg-zinc-950/95 backdrop-blur-xl animate-fade-in">
       {/* Logo at Top */}
       <div className="absolute top-8 left-1/2 -translate-x-1/2">
-        <div className="relative w-20 h-20 rounded-full overflow-hidden border-4 border-spicy-orange shadow-2xl">
+        <div className="relative w-20 h-20 rounded-full overflow-hidden border-4 border-brand-golden shadow-2xl">
           <Image 
             src="/logo-new.jpg" 
             alt="Open Chats" 
@@ -60,49 +60,49 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         <Link 
           href="/episodes" 
           onClick={handleLinkClick}
-          className="font-display text-3xl md:text-5xl font-black uppercase text-white hover:text-spicy-orange transition-colors"
+          className="font-display text-3xl md:text-5xl font-black uppercase text-brand-golden hover:text-brand-red transition-colors"
         >
           EPISODES
         </Link>
         <Link 
           href="/live" 
           onClick={handleLinkClick}
-          className="font-display text-3xl md:text-5xl font-black uppercase text-red-500 hover:text-red-400 transition-colors animate-pulse"
+          className="font-display text-3xl md:text-5xl font-black uppercase text-brand-red hover:text-brand-golden transition-colors animate-pulse"
         >
           LIVE
         </Link>
         <Link 
           href="/shop" 
           onClick={handleLinkClick}
-          className="font-display text-3xl md:text-5xl font-black uppercase text-white hover:text-spicy-orange transition-colors"
+          className="font-display text-3xl md:text-5xl font-black uppercase text-brand-golden hover:text-brand-red transition-colors"
         >
           MERCH
         </Link>
         <Link 
           href="/community" 
           onClick={handleLinkClick}
-          className="font-display text-3xl md:text-5xl font-black uppercase text-white hover:text-spicy-orange transition-colors"
+          className="font-display text-3xl md:text-5xl font-black uppercase text-brand-golden hover:text-brand-red transition-colors"
         >
           COMMUNITY
         </Link>
         <Link 
           href="/membership" 
           onClick={handleLinkClick}
-          className="font-display text-3xl md:text-5xl font-black uppercase text-spicy-orange hover:text-white transition-colors"
+          className="font-display text-3xl md:text-5xl font-black uppercase text-brand-golden hover:text-brand-red transition-colors"
         >
           JOIN
         </Link>
         <Link 
           href="/about" 
           onClick={handleLinkClick}
-          className="font-display text-3xl md:text-5xl font-black uppercase text-white hover:text-spicy-orange transition-colors"
+          className="font-display text-3xl md:text-5xl font-black uppercase text-brand-golden hover:text-brand-red transition-colors"
         >
           HOSTS
         </Link>
         <Link 
           href="/contact" 
           onClick={handleLinkClick}
-          className="font-display text-3xl md:text-5xl font-black uppercase text-white hover:text-spicy-orange transition-colors"
+          className="font-display text-3xl md:text-5xl font-black uppercase text-brand-golden hover:text-brand-red transition-colors"
         >
           CONTACT
         </Link>

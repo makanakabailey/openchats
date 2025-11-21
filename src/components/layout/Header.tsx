@@ -15,7 +15,7 @@ export default function Header() {
         <nav className="container mx-auto flex items-center justify-between h-16 px-4">
           {/* Logo - Circular Frame */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-spicy-orange shadow-lg group-hover:border-white transition-colors">
+            <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-brand-golden shadow-lg group-hover:border-brand-red transition-colors">
               <Image 
                 src="/logo-new.jpg" 
                 alt="Open Chats" 
@@ -24,7 +24,7 @@ export default function Header() {
                 priority
               />
             </div>
-            <span className="hidden md:block font-display text-xl font-black uppercase text-white group-hover:text-spicy-orange transition-colors">
+            <span className="hidden md:block font-display text-xl font-black uppercase text-brand-golden group-hover:text-brand-red transition-colors">
               OPEN CHATS
             </span>
           </Link>
@@ -33,43 +33,43 @@ export default function Header() {
           <div className="hidden md:flex items-center gap-6 lg:gap-8">
             <Link 
               href="/episodes" 
-              className="font-body text-sm font-semibold uppercase tracking-wide text-white hover:text-spicy-orange transition-colors whitespace-nowrap"
+              className="font-body text-sm font-semibold uppercase tracking-wide text-brand-golden hover:text-brand-red transition-colors whitespace-nowrap"
             >
               EPISODES
             </Link>
             <Link 
               href="/live" 
-              className="font-body text-sm font-semibold uppercase tracking-wide text-red-500 hover:text-red-400 transition-colors whitespace-nowrap animate-pulse"
+              className="font-body text-sm font-semibold uppercase tracking-wide text-brand-red hover:text-brand-golden transition-colors whitespace-nowrap animate-pulse"
             >
               LIVE
             </Link>
             <Link 
               href="/shop" 
-              className="font-body text-sm font-semibold uppercase tracking-wide text-white hover:text-spicy-orange transition-colors whitespace-nowrap"
+              className="font-body text-sm font-semibold uppercase tracking-wide text-brand-golden hover:text-brand-red transition-colors whitespace-nowrap"
             >
               MERCH
             </Link>
             <Link 
               href="/community" 
-              className="font-body text-sm font-semibold uppercase tracking-wide text-white hover:text-spicy-orange transition-colors whitespace-nowrap"
+              className="font-body text-sm font-semibold uppercase tracking-wide text-brand-golden hover:text-brand-red transition-colors whitespace-nowrap"
             >
               COMMUNITY
             </Link>
             <Link 
               href="/membership" 
-              className="font-body text-sm font-semibold uppercase tracking-wide text-spicy-orange hover:text-white transition-colors whitespace-nowrap"
+              className="font-body text-sm font-semibold uppercase tracking-wide text-brand-golden hover:text-brand-red transition-colors whitespace-nowrap"
             >
               JOIN
             </Link>
             <Link 
               href="/about" 
-              className="font-body text-sm font-semibold uppercase tracking-wide text-white hover:text-spicy-orange transition-colors whitespace-nowrap"
+              className="font-body text-sm font-semibold uppercase tracking-wide text-brand-golden hover:text-brand-red transition-colors whitespace-nowrap"
             >
               HOSTS
             </Link>
             <Link 
               href="/contact" 
-              className="font-body text-sm font-semibold uppercase tracking-wide text-white hover:text-spicy-orange transition-colors whitespace-nowrap"
+              className="font-body text-sm font-semibold uppercase tracking-wide text-brand-golden hover:text-brand-red transition-colors whitespace-nowrap"
             >
               CONTACT
             </Link>

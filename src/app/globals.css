@@ -16,15 +16,15 @@
 @layer components {
   /* Button Styles */
   .btn-primary {
-    @apply bg-spicy-orange hover:bg-spicy-orange-dark text-white px-8 py-4 text-lg font-bold uppercase tracking-wide transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(255,69,0,0.5)] rounded;
+    @apply bg-brand-golden hover:bg-brand-golden-dark text-studio-black px-8 py-4 text-lg font-bold uppercase tracking-wide transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(223,191,109,0.5)] rounded;
   }
   
   .btn-secondary {
-    @apply border-2 border-white bg-studio-black text-white px-8 py-4 text-lg font-bold uppercase hover:bg-white hover:text-studio-black transition-all rounded;
+    @apply border-2 border-brand-red bg-studio-black text-brand-golden px-8 py-4 text-lg font-bold uppercase hover:bg-brand-red hover:text-white transition-all rounded;
   }
   
   .btn-ghost {
-    @apply text-white hover:text-spicy-orange font-semibold uppercase underline transition-colors;
+    @apply text-brand-golden hover:text-brand-red font-semibold uppercase underline transition-colors;
   }
 
   /* Card Styles */
@@ -33,12 +33,12 @@
   }
 
   /* Text Glow Effects */
-  .text-glow-orange {
-    @apply drop-shadow-[0_0_30px_rgba(255,69,0,0.5)];
+  .text-glow-golden {
+    @apply drop-shadow-[0_0_30px_rgba(223,191,109,0.5)];
   }
   
-  .text-glow-purple {
-    @apply drop-shadow-[0_0_30px_rgba(139,92,246,0.5)];
+  .text-glow-red {
+    @apply drop-shadow-[0_0_30px_rgba(217,71,44,0.5)];
   }
 
   /* Hide Scrollbar */
