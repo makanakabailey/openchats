@@ -45,7 +45,7 @@ export default function LivePage() {
                 Live Stream Coming Soon
               </p>
               <p className="text-text-muted text-sm max-w-md text-center px-4">
-                We'll be going live soon. Follow us on YouTube, Twitch, and Instagram for notifications.
+                We'll be going live soon. Follow us on YouTube, TikTok, and Instagram for notifications.
               </p>
             </div>
           </div>
@@ -96,17 +96,17 @@ export default function LivePage() {
               </p>
             </a>
             <a
-              href="https://www.twitch.tv/openchats"
+              href="https://www.tiktok.com/@openchats"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-purple-500/10 rounded-lg p-8 border-2 border-purple-500 hover:scale-105 transition-transform text-center"
+              className="bg-cyan-500/10 rounded-lg p-8 border-2 border-cyan-500 hover:scale-105 transition-transform text-center"
             >
-              <div className="text-6xl mb-4">🎮</div>
+              <div className="text-6xl mb-4">🎵</div>
               <h3 className="font-display text-2xl font-bold uppercase text-white mb-2">
-                Twitch
+                TikTok
               </h3>
               <p className="text-text-body text-sm">
-                Interactive live streams with chat
+                Short clips and live streams
               </p>
             </a>
             <a
