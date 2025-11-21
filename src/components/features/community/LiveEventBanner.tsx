@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { BroadcastIcon as Broadcast, Users } from '@phosphor-icons/react';
 
 export default function LiveEventBanner() {
@@ -35,12 +36,12 @@ export default function LiveEventBanner() {
             </div>
           </div>
           
-          <a 
+          <Link 
             href="/live"
-            className="bg-white text-spicy-orange px-4 sm:px-6 md:px-8 py-2 md:py-3 rounded-lg font-bold uppercase text-xs sm:text-sm hover:bg-gray-100 transition-colors whitespace-nowrap w-full md:w-auto text-center"
+            className="bg-white text-spicy-orange px-4 sm:px-6 md:px-8 py-2 md:py-3 rounded-lg font-bold uppercase text-xs sm:text-sm hover:bg-gray-100 transition-colors whitespace-nowrap w-full md:w-auto text-center block"
           >
             JOIN LIVE NOW →
-          </a>
+          </Link>
         </div>
       </div>
     </section>

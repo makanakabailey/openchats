@@ -64,28 +64,26 @@ export default function DiscussionCard({ discussion }: DiscussionCardProps) {
             </p>
 
             {/* Stats */}
-            <div className="flex flex-wrap items-center gap-3 md:gap-6 text-text-muted text-xs md:text-sm">
-              <div className="flex items-center gap-1 md:gap-2 whitespace-nowrap">
+            <div className="flex flex-wrap items-center gap-2 md:gap-4 text-text-muted text-xs md:text-sm">
+              <div className="flex items-center gap-1 whitespace-nowrap">
                 <ChatCircle size={14} weight="bold" className="md:w-4 md:h-4 flex-shrink-0" />
                 <span>{discussion.replies}</span>
               </div>
-              <div className="flex items-center gap-1 md:gap-2 whitespace-nowrap">
+              <div className="flex items-center gap-1 whitespace-nowrap">
                 <Eye size={14} weight="bold" className="md:w-4 md:h-4 flex-shrink-0" />
                 <span>{discussion.views}</span>
               </div>
-              <div className="flex items-center gap-2 md:gap-3">
-                <div className="flex items-center gap-1 whitespace-nowrap">
-                  <Fire size={14} weight="fill" className="text-spicy-orange md:w-4 md:h-4 flex-shrink-0" />
-                  <span>{discussion.reactions.fire}</span>
-                </div>
-                <div className="flex items-center gap-1 whitespace-nowrap">
-                  <Heart size={14} weight="fill" className="text-red-400 md:w-4 md:h-4 flex-shrink-0" />
-                  <span>{discussion.reactions.love}</span>
-                </div>
-                <div className="flex items-center gap-1 whitespace-nowrap">
-                  <Smiley size={14} weight="fill" className="text-yellow-400 md:w-4 md:h-4 flex-shrink-0" />
-                  <span>{discussion.reactions.laugh}</span>
-                </div>
+              <div className="flex items-center gap-1 whitespace-nowrap">
+                <Fire size={14} weight="fill" className="text-spicy-orange md:w-4 md:h-4 flex-shrink-0" />
+                <span>{discussion.reactions.fire}</span>
+              </div>
+              <div className="flex items-center gap-1 whitespace-nowrap">
+                <Heart size={14} weight="fill" className="text-red-400 md:w-4 md:h-4 flex-shrink-0" />
+                <span>{discussion.reactions.love}</span>
+              </div>
+              <div className="flex items-center gap-1 whitespace-nowrap">
+                <Smiley size={14} weight="fill" className="text-yellow-400 md:w-4 md:h-4 flex-shrink-0" />
+                <span>{discussion.reactions.laugh}</span>
               </div>
             </div>
           </div>
