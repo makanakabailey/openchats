@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-display: 'Oswald', system-ui, sans-serif;
+    --font-body: 'DM Sans', 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-studio-black text-text-body;
+  }
+}
+
+@layer components {
+  /* Button Styles */
+  .btn-primary {
+    @apply bg-spicy-orange hover:bg-spicy-orange-dark text-white px-8 py-4 text-lg font-bold uppercase tracking-wide transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(255,69,0,0.5)] rounded;
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-white bg-studio-black text-white px-8 py-4 text-lg font-bold uppercase hover:bg-white hover:text-studio-black transition-all rounded;
+  }
+  
+  .btn-ghost {
+    @apply text-white hover:text-spicy-orange font-semibold uppercase underline transition-colors;
+  }
+
+  /* Card Styles */
+  .card-dark {
+    @apply bg-card-dark hover:bg-card-darker rounded-lg overflow-hidden transition-all duration-300;
+  }
+
+  /* Text Glow Effects */
+  .text-glow-orange {
+    @apply drop-shadow-[0_0_30px_rgba(255,69,0,0.5)];
+  }
+  
+  .text-glow-purple {
+    @apply drop-shadow-[0_0_30px_rgba(139,92,246,0.5)];
+  }
+
+  /* Marquee Animation */
+  .animate-marquee {
+    animation: marquee 20s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* Glassmorphism */
+  .glass {
+    @apply bg-zinc-900/80 backdrop-blur-md;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
